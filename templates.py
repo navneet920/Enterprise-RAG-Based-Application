@@ -140,7 +140,7 @@ files = [
     "app/services/rag/rag_pipeline.py",
 
     # LLM Files
-    "app/services/llm/llama_service.py",
+    "app/services/llm/huggingface_service.py",
     "app/services/llm/model_loader.py",
     "app/services/llm/prompt_templates.py",
 
