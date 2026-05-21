@@ -8,8 +8,8 @@ class Settings:
 
     APP_NAME = os.getenv("APP_NAME")
 
-    HUGGINGFACE_API_KEY = os.getenv(
-        "HUGGINGFACE_API_KEY"
+    HUGGINGFACEHUB_API_TOKEN = os.getenv(
+        "HUGGINGFACEHUB_API_TOKEN"
     )
 
     MYSQL_HOST = os.getenv("MYSQL_HOST")
