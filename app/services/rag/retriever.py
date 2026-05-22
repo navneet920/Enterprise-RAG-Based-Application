@@ -1,10 +1,4 @@
-from app.services.embeddings.embedding_generator import (
-    create_embedding
-)
-
-from app.database.faiss_db import (
-    search_vector
-)
+from app.services.rag.hybrid_search import hybrid_search
 
 
 def retrieve_documents(
@@ -12,12 +6,9 @@ def retrieve_documents(
         top_k=5
 ):
 
-    query_embedding = create_embedding(
-        query
-    )
 
-    results = search_vector(
-        query_embedding,
+    results = hybrid_search(
+        query,
         top_k
     )
 

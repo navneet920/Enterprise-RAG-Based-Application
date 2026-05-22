@@ -8,13 +8,16 @@ index = faiss.IndexFlatL2(dimension)
 document_store = []
 
 
-def add_vector(vector, chunk):
+def add_vector(vector, chunk,document_name):
 
     vector = np.array([vector]).astype("float32")
 
     index.add(vector)
 
-    document_store.append(chunk)
+    document_store.append({
+        "document_name":document_name,
+        "text":chunk
+    })
 
 
 def search_vector(vector, top_k=5):

@@ -28,3 +28,5 @@ aiofiles
 bcrypt
 passlib
 python-jose
+redis
+rank-bm25

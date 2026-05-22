@@ -66,7 +66,8 @@ async def upload_pdf(
 
         add_vector(
             embedding,
-            chunk
+            chunk,
+            file.filename
         )
 
     return {
